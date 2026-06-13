@@ -1,6 +1,6 @@
 {
   "name": "seo-tags",
-  "version": "0.1.0",
+  "version": "0.11.0",
   "description": "Universal SEO meta tag management for React, Next.js, Remix, Astro, SvelteKit and more. One API, every framework.",
   "author": "devchauhann",
   "license": "MIT",
