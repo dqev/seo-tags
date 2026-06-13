@@ -1,0 +1,14 @@
+[
+  {
+    "path": "dist/index.js",
+    "limit": "6 KB"
+  },
+  {
+    "path": "dist/react/index.js",
+    "limit": "7 KB"
+  },
+  {
+    "path": "dist/next/index.js",
+    "limit": "4 KB"
+  }
+]

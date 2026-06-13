@@ -1,0 +1,17 @@
+---
+import { buildTags } from 'seo-tags';
+
+const props = Astro.props;
+const resolved = buildTags(props).resolve();
+---
+
+{resolved.map((tag) => {
+  if (tag.tag === 'title') {
+    return <title {...tag.attributes}>{tag.content}</title>;
+  }
+  if (tag.tag === 'script') {
+    return <script type={tag.attributes.type} {...tag.attributes} set:html={tag.content}></script>;
+  }
+  const Element = tag.tag;
+  return <Element {...tag.attributes} />;
+})}

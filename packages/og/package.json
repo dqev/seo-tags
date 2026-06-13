@@ -1,0 +1,27 @@
+{
+  "name": "@meta-tags/og",
+  "version": "0.1.1",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "dependencies": {
+    "seo-tags": "workspace:*",
+    "@vercel/og": "^0.6.2"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "type-check": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "react": ">=18.0.0",
+    "typescript": "^5.4.5",
+    "tsup": "^8.1.0"
+  }
+}

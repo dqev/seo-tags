@@ -1,0 +1,41 @@
+---
+title: "meta-tags"
+description: "One API. Every meta tag. Every framework. Zero guesswork."
+template: splash
+hero:
+  tagline: "Universal, SSR-safe, fully-typed SEO meta tag management for React, Next.js, Remix, Astro, Svelte, and Node."
+  actions:
+    - text: Get Started
+      link: /configuration
+      icon: right-arrow
+      variant: primary
+    - text: View on GitHub
+      link: https://github.com/dqev/meta-tags
+      icon: external
+      variant: minimal
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## Why meta-tags?
+
+<CardGrid list>
+  <Card title="Universal Compatibility" icon="setting">
+    Works perfectly across React, Next.js (RSC compatible), Remix v2, Astro, SvelteKit, and plain HTML layouts.
+  </Card>
+  <Card title="Auto-Derivation Engine" icon="random">
+    Provide a title and description, and the engine automatically derives Open Graph and Twitter card values.
+  </Card>
+  <Card title="Built-in Structured Data" icon="code">
+    12 pre-built fully-typed JSON-LD schema schemas (Article, Product, FAQ, breadcrumbs, local businesses, etc.).
+  </Card>
+  <Card title="Environment-Aware indexer" icon="warning">
+    Automatically overrides robots tags to `noindex, nofollow` on staging/preview platforms and blocks search crawling.
+  </Card>
+  <Card title="Sitemaps & Robots" icon="document">
+    XML sitemaps and rules-based `robots.txt` generators featuring environment overrides.
+  </Card>
+  <Card title="CLI Audit Suite" icon="terminal">
+    Validate local route configurations, test live URL tags, and audit scoring logs straight from your console.
+  </Card>
+</CardGrid>

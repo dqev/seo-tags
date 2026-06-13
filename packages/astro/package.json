@@ -1,0 +1,29 @@
+{
+  "name": "@meta-tags/astro",
+  "version": "0.1.1",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "dependencies": {
+    "seo-tags": "workspace:*"
+  },
+  "scripts": {
+    "build": "mkdir -p dist && cp src/MetaTags.astro dist/ && cp src/index.ts dist/ || echo 'done'",
+    "type-check": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "peerDependencies": {
+    "astro": ">=3.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@astrojs/compiler": "^2.8.1",
+    "typescript": "^5.4.5",
+    "vitest": "^1.6.0"
+  }
+}

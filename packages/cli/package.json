@@ -1,0 +1,25 @@
+{
+  "name": "@meta-tags/cli",
+  "version": "0.1.1",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "dependencies": {
+    "seo-tags": "workspace:*",
+    "commander": "^12.1.0"
+  },
+  "scripts": {
+    "build": "tsup",
+    "type-check": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.4.5",
+    "tsup": "^8.1.0"
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "name": "seo-tags",
+  "version": "0.1.0",
+  "description": "Universal SEO meta tag management for React, Next.js, Remix, Astro, SvelteKit and more. One API, every framework.",
+  "author": "devchauhann",
+  "license": "MIT",
+  "homepage": "https://github.com/dqev/meta-tags#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dqev/meta-tags.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dqev/meta-tags/issues"
+  },
+  "keywords": [
+    "seo",
+    "meta tags",
+    "open graph",
+    "twitter card",
+    "json-ld",
+    "structured data",
+    "react",
+    "next.js",
+    "nextjs",
+    "remix",
+    "astro",
+    "svelte",
+    "sveltekit",
+    "canonical",
+    "sitemap",
+    "robots",
+    "hreflang",
+    "pwa",
+    "og image",
+    "schema.org"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts src/sitemap/index.ts --format cjs,esm --dts",
+    "type-check": "tsc --noEmit",
+    "test": "vitest run",
+    "size": "size-limit"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./react": {
+      "types": "./dist/react/index.d.ts",
+      "import": "./dist/react/index.js",
+      "require": "./dist/react/index.cjs"
+    },
+    "./next": {
+      "types": "./dist/next/index.d.ts",
+      "import": "./dist/next/index.js",
+      "require": "./dist/next/index.cjs"
+    },
+    "./remix": {
+      "types": "./dist/remix/index.d.ts",
+      "import": "./dist/remix/index.js"
+    },
+    "./astro": "./dist/astro/MetaTags.astro",
+    "./svelte": "./dist/svelte/MetaTags.svelte",
+    "./og": {
+      "types": "./dist/og/index.d.ts",
+      "import": "./dist/og/index.js"
+    },
+    "./sitemap": {
+      "types": "./dist/sitemap/index.d.ts",
+      "import": "./dist/sitemap/index.js",
+      "require": "./dist/sitemap/index.cjs"
+    }
+  },
+  "bin": {
+    "seo-tags": "dist/cli/index.js"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0",
+    "next": ">=13.0.0",
+    "@remix-run/react": ">=2.0.0",
+    "svelte": ">=4.0.0",
+    "astro": ">=3.0.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    },
+    "react-dom": {
+      "optional": true
+    },
+    "next": {
+      "optional": true
+    },
+    "@remix-run/react": {
+      "optional": true
+    },
+    "svelte": {
+      "optional": true
+    },
+    "astro": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "vitest": "^1.6.0",
+    "tsup": "^8.1.0",
+    "playwright": "^1.44.0",
+    "@size-limit/preset-small-lib": "^11.0.0",
+    "size-limit": "^11.0.0",
+    "eslint": "^9.0.0",
+    "@changesets/cli": "^2.27.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
