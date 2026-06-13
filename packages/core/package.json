@@ -4,13 +4,13 @@
   "description": "Universal SEO meta tag management for React, Next.js, Remix, Astro, SvelteKit and more. One API, every framework.",
   "author": "devchauhann",
   "license": "MIT",
-  "homepage": "https://github.com/dqev/meta-tags#readme",
+  "homepage": "https://github.com/dqev/seo-tags#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dqev/meta-tags.git"
+    "url": "git+https://github.com/dqev/seo-tags.git"
   },
   "bugs": {
-    "url": "https://github.com/dqev/meta-tags/issues"
+    "url": "https://github.com/dqev/seo-tags/issues"
   },
   "keywords": [
     "seo",
